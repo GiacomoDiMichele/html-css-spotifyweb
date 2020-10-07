@@ -28,7 +28,8 @@ main {
 
 .navigation {
     width: 200px;
-    background-color: blue;
+    background: rgb(29,27,2);
+    background: linear-gradient(90deg, rgba(29,27,2,1) 0%, rgba(19,15,0,1) 100%);
     flex-shrink: 0;
 }
 
@@ -63,9 +64,14 @@ main {
     justify-content: flex-start;
 }
 
+.img-playlist {
+    margin: 50px 27px;
+}
+
 .playlist-groups a {
     display: block;
     text-align: center;
+    color: white;
 }
 
 .playlist-groups img {
@@ -77,5 +83,5 @@ main {
 
 footer {
     height: 100px;
-    background-color: green;
+    background-color:#282828;
 }
