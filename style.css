@@ -95,6 +95,36 @@ main {
     margin-top: 10px;
 }
 
+.navbar-side {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-side a {
+    color: white;
+}
+
+.navbar-side i {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.listened {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listened h5 {
+    color: white;
+    font-size: 1.3em;
+}
+
+.margin-listened {
+    margin-top: 10px;
+}
+
 footer {
     height: 100px;
     background-color:#282828;
