@@ -155,6 +155,7 @@ footer {
 
 .footer-left {
     align-items: center;
+    justify-content: space-around;
     display: flex;
     float: left;
     width: 20%;
@@ -172,8 +173,20 @@ footer {
 
 .text-footer-left{
     flex-direction: column;
+    font-weight: 300;
 }
 
+.text-footer-left a {
+    color: #A0A0A3;
+}
+
+.text-footer-left p {
+    color: #A39393;
+}
+
+.icon-heart i {
+    color: #A0A0A3;
+}
 .footer-center {
     flex-direction: column;
     height: 100%;
@@ -187,6 +200,13 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.icons-player a {
+    color: #ACA9A4;
+    margin: 0px 10px;
+    font-size: 1.0em;
+}
+
 
 .timer-player {
     display: flex;
