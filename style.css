@@ -85,6 +85,11 @@ main {
     flex-shrink: 0;
 }
 
+.navigation a {
+    color: lightgrey;
+    font-weight: 300;
+}
+
 .container-aside {
     width: 90%;
     margin: auto;
@@ -101,10 +106,6 @@ main {
     flex-direction: column;
 }
 
-.navbar-side a {
-    color: white;
-}
-
 .navbar-side i {
     margin-right: 15px;
     margin-left: 5px;
@@ -117,15 +118,92 @@ main {
 }
 
 .listened h5 {
-    color: white;
-    font-size: 1.3em;
+    color: lightgrey;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .margin-listened {
     margin-top: 10px;
 }
 
+.account-installation {
+    margin-top: 40px;
+    min-height: 543px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.account, .installation {
+    padding: 10px 0px;
+}
+
+.account-installation i {
+    margin-right: 10px;
+}
+
+.account {
+    border-bottom: 1px solid white;
+}
+
 footer {
     height: 100px;
     background-color:#282828;
+}
+
+.footer-left {
+    align-items: center;
+    display: flex;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.image-footer-left {
+    width: 80px;
+    height: 80px;
+}
+
+.image-footer-left img {
+    width: 100%;
+}
+
+.text-footer-left{
+    flex-direction: column;
+}
+
+.footer-center {
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    float: left;
+    width: 60%;
+}
+
+.timer-player {
+    display: flex;
+    align-items: center;
+}
+
+.timer-player span{
+    display: inline-block;
+}
+
+.seconds-timer {
+    margin: 0px 10px;
+}
+
+#line-timer {
+    width: 50%;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+}
+
+.footer-right {
+    display: flex;
+    float: left;
+    height: 100%;
+    width: 20%;
 }
