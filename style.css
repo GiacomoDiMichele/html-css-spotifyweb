@@ -33,9 +33,13 @@ main {
 }
 
 .navbar-menu ul{
-    margin: 0px 260px;
-    justify-content: space-around;
+    margin-top: 20px;
+    justify-content: space-evenly;
     display: flex;
+}
+
+.navbar-button {
+    display: none;
 }
 
 .navbar-menu a {
@@ -79,6 +83,7 @@ main {
 }
 
 .navigation {
+    height: 100%;
     width: 200px;
     background: rgb(29,27,2);
     background: linear-gradient(90deg, rgba(29,27,2,1) 0%, rgba(19,15,0,1) 100%);
@@ -91,8 +96,13 @@ main {
 }
 
 .container-aside {
+    height: 100%;
     width: 90%;
     margin: auto;
+}
+
+.logo-apotify {
+    height: 7%;
 }
 
 .logo-spotify img {
@@ -101,6 +111,7 @@ main {
 }
 
 .navbar-side {
+    height: 30%;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -129,8 +140,7 @@ main {
 }
 
 .account-installation {
-    margin-top: 40px;
-    min-height: 543px;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -187,6 +197,7 @@ footer {
 .icon-heart i {
     color: #A0A0A3;
 }
+
 .footer-center {
     flex-direction: column;
     height: 100%;
@@ -253,4 +264,24 @@ footer {
     display: inline-block;
     width: 25%;
     border-bottom: 2px solid #ACA9A4;
+}
+
+@media screen and (max-width:992px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-button {
+        display: block;
+        background-color: #776C02;
+        border-width: 0;
+    }
+}
+
+    .navbar-icons {
+        margin: 5px 0px;
+        width: 32px;
+        display: block;
+        border-bottom: 4px solid white;
+    }
 }
