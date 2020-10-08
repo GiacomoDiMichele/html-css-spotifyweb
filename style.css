@@ -178,13 +178,20 @@ footer {
     flex-direction: column;
     height: 100%;
     display: flex;
+        justify-content: center;
     float: left;
     width: 60%;
+}
+
+.icons-player {
+    display: flex;
+    justify-content: center;
 }
 
 .timer-player {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .timer-player span{
