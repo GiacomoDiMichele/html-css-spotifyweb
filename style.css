@@ -281,6 +281,9 @@ footer {
         flex-shrink: 1;
     }
 
+    .navbar-side span {
+        display: none;
+    }
     .logo-spotify {
         height: 15%;
     }
@@ -295,6 +298,16 @@ footer {
 
     .account-installation {
         height: calc(54% - 20px);
+        align-items: center;
+    }
+
+    .account-installation i {
+        font-size: 2.0em;
+        margin-right: 0px;
+    }
+
+    .account-installation span {
+        display: none;
     }
 
     .listened {
@@ -342,7 +355,7 @@ footer {
     .container {
         width: 95%;
     }
-    
+
     .navbar-menu {
         display: none;
     }
