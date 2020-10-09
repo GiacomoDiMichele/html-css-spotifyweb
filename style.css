@@ -101,7 +101,7 @@ main {
     margin: auto;
 }
 
-.logo-apotify {
+.logo-spotify {
     height: 7%;
 }
 
@@ -110,7 +110,12 @@ main {
     margin-top: 10px;
 }
 
+#short-logo {
+    display: none;
+}
+
 .navbar-side {
+    margin-top: 20px;
     height: 30%;
     font-weight: 300;
     display: flex;
@@ -120,6 +125,12 @@ main {
 .navbar-side i {
     margin-right: 15px;
     margin-left: 5px;
+    font-size: 1.0em;
+    color: white;
+}
+
+.none-mobile {
+    display: block;
 }
 
 .listened {
@@ -140,7 +151,7 @@ main {
 }
 
 .account-installation {
-    height: 60%;
+    height: calc(63% - 20px);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -174,7 +185,6 @@ footer {
 
 .image-footer-left {
     width: 80px;
-    height: 80px;
 }
 
 .image-footer-left img {
@@ -265,18 +275,84 @@ footer {
     width: 25%;
     border-bottom: 2px solid #ACA9A4;
 }
+@media screen and (max-width:580px) {
+
+    .navigation {
+        flex-shrink: 1;
+    }
+
+    .logo-spotify {
+        height: 15%;
+    }
+
+    #bigger-logo {
+        display: none;
+    }
+
+    #short-logo {
+        display: flex;
+    }
+
+    .account-installation {
+        height: calc(54% - 20px);
+    }
+
+    .listened {
+        display: none;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .none-mobile {
+        display: none;
+    }
+
+    .navbar-side i {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        font-size: 2.0em;
+    }
+
+    .footer-left {
+        justify-content: flex-start;
+    }
+
+    .image-footer-left img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-footer-left {
+        display: none;
+    }
+
+    .footer-center {
+        width: 80%;
+    }
+
+    .footer-right {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width:992px) {
+
+    .container {
+        width: 95%;
+    }
+    
     .navbar-menu {
         display: none;
     }
 
     .navbar-button {
         display: block;
+        margin-top: 20px;
         background-color: #776C02;
         border-width: 0;
     }
-}
 
     .navbar-icons {
         margin: 5px 0px;
